@@ -200,6 +200,7 @@ class Content implements ContentInterface
                 CmsPageInterface::IDENTIFIER => $pageInterface->getIdentifier(),
                 CmsPageInterface::TITLE => $pageInterface->getTitle(),
                 CmsPageInterface::PAGE_LAYOUT => $pageInterface->getPageLayout(),
+                CmsPageInterface::META_TITLE => $pageInterface->getMetaTitle(),
                 CmsPageInterface::META_KEYWORDS => $pageInterface->getMetaKeywords(),
                 CmsPageInterface::META_DESCRIPTION => $pageInterface->getMetaDescription(),
                 CmsPageInterface::CONTENT_HEADING => $pageInterface->getContentHeading(),
@@ -374,6 +375,7 @@ class Content implements ContentInterface
             ->setIdentifier($cms[CmsPageInterface::IDENTIFIER])
             ->setTitle($cms[CmsPageInterface::TITLE])
             ->setPageLayout($cms[CmsPageInterface::PAGE_LAYOUT])
+            ->setMetaTitle($cms[CmsPageInterface::META_TITLE])
             ->setMetaKeywords($cms[CmsPageInterface::META_KEYWORDS])
             ->setMetaDescription($cms[CmsPageInterface::META_DESCRIPTION])
             ->setContentHeading($cms[CmsPageInterface::CONTENT_HEADING])
